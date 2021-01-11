@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        #btn {
+            display: inline-block;
+            width: 240px;
+            height: 24px;
+            line-height: 24px;
+            font-family: 微软雅黑;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 3px;
+            background-color: deepskyblue;
+            color: White;
+            cursor: pointer;
+        }
+
+            #btn:hover {
+                background-color: dodgerblue;
+            }
+    </style>
+    <script>
+
+         window.onload = function () {
+             alert("新年好！");
+            var btnOpen1 = document.getElementById("btn_open1");
+            var opener = null;
+            btnOpen1.onclick = function () {
+                opener = window.open("http://www.lvyestudy.com");
+            };
+           
+           
+        }
+    </script>
+</head>
+<body>
+    <div id="btn">请填写您的姓名</div>
+
+    <form method="post">
+        姓名：<input type="text" maxlength="3" />
+        <input type="reset" value="重置" />
+    </form>
+            <input id="btn_open1" type="button" value="开始" />
+
+</body>
+</html>
